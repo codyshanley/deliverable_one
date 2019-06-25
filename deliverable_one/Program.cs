@@ -15,7 +15,6 @@ namespace deliverable_one
         static void Main(string[] args)
         {
             double[] num = new double[3];
-            double total, avg, hiNum, lowNum;
 
             //get input from user
             Console.WriteLine("Please enter three different dollar amounts:");
@@ -27,7 +26,7 @@ namespace deliverable_one
             }
 
             //calculate and display total, average & low/high numbers
-            total = Math.Round(num.Sum(), 2);
+            double total = Math.Round(num.Sum(), 2);
             Console.WriteLine("\nTotal: " + total);
             Console.WriteLine("Average: " + Math.Round(num.Average(), 2));
             Console.WriteLine("Lowest Number: " + Math.Round(num.Min(), 2));
